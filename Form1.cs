@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Windows.Forms;
 // Other namespace
 using Holidays;
@@ -18,6 +19,15 @@ namespace WorldSpecialDaysCountdown
 #if DEBUG
             Text += " [DEBUG]";
 #endif
+            // Check for new version
+            if (Application.ProductVersion != VersionChecker.GetNewVersionNumberFromGithubAPI())
+            {
+                if (MessageBox.Show("A new version of World Special Days Countdown is available. Do you want to download a new version?", "Update Available", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
+                {
+                    Process.Start("https://github.com/JoshuaMaitland/WorldSpecialDaysCountdown/releases");
+                }
+            }
+
             DateTime newYearDate = new DateTime(DateTime.Now.Year + 1, 1, 1);
             DateTime valentinesDate = new DateTime(DateTime.Now.Year, 2, 14);
             DateTime stPatricksDayDate = new DateTime(DateTime.Now.Year, 3, 17);
