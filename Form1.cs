@@ -3,6 +3,7 @@ using Holidays;
 using System;
 using System.Diagnostics;
 using System.Linq;
+using System.Reflection;
 using System.Windows.Forms;
 
 namespace WorldSpecialDaysCountdown
@@ -104,6 +105,19 @@ namespace WorldSpecialDaysCountdown
             lblDaysLeftArmisticeDay.Text += daysUntilArmistice.ToString();
             lblDaysLeftThanksgiving.Text += daysUntilThanksgiving.ToString();
             lblDaysLeftChristmas.Text += daysUntilChristmas.ToString();
+        }
+
+        private void Form1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.F1)
+            {
+                Assembly currentAssem = typeof(Program).Assembly;
+                var versionInfo = FileVersionInfo.GetVersionInfo(Assembly.GetEntryAssembly().Location);
+                // Get the copyright info from versionInfo
+                var copyright = versionInfo.LegalCopyright;
+                // Show the message box
+                MessageBox.Show("World Special Days Countdown\n\nDeveloped by Joshua Maitland\n\nVersion: " + Application.ProductVersion + "\n\n" + copyright, "About", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
     }
 }
