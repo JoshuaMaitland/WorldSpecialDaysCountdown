@@ -156,7 +156,7 @@
             this.Controls.Add(this.lblDaysLeftValentines);
             this.Controls.Add(this.lblDaysLeftNewYear);
             this.MaximizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(540, 39);
+            this.MinimumSize = new System.Drawing.Size(540, 600);
             this.Name = "Form1";
             this.Text = "World Special Days Left in YEAR";
             this.Load += new System.EventHandler(this.Form1_Load);
