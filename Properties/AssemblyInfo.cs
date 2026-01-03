@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("WorldSpecialDaysCountdown")]
-[assembly: AssemblyCopyright("Copyright © 2024-2026 JoshuaMaitland")]
+[assembly: AssemblyCopyright("Copyright © 2024-2026")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
