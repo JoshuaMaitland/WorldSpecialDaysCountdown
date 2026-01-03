@@ -12,7 +12,7 @@ namespace WorldSpecialDaysCountdown
         public static string GetNewVersionNumberFromGithubAPI()
         {
             var c = new WebClient();
-            c.Headers.Add("User-Agent", "GitHubAutoUpdateTest");
+            c.Headers.Add("User-Agent", "GitHub API client");
             var s = c.DownloadString("https://api.github.com/repos/JoshuaMaitland/WorldSpecialDaysCountdown/releases/latest");
             var versionTag = s.Split(new string[] { "\"tag_name\":\"" }, StringSplitOptions.None)[1].Split('"')[0];
 
