@@ -38,6 +38,7 @@ namespace WorldSpecialDaysCountdown
             DateTime valentinesDate = new DateTime(DateTime.Now.Year, 2, 14);
             DateTime stPatricksDayDate = new DateTime(DateTime.Now.Year, 3, 17);
             DateTime easterDate = ChristianHolidays.EasterSunday(DateTime.Now.Year);
+            DateTime independenceDate = new DateTime(DateTime.Now.Year, 7, 4);
             DateTime halloweenDate = new DateTime(DateTime.Now.Year, 10, 31);
             DateTime armisticeDate = new DateTime(DateTime.Now.Year, 11, 11);
             DateTime thanksgivingDate = new DateTime(DateTime.Now.Year, 11, thanksgivingDay);
@@ -47,6 +48,7 @@ namespace WorldSpecialDaysCountdown
             double daysUntilValentines = valentinesDate.Subtract(DateTime.Today).TotalDays;
             double daysUntilStPatricksDay = stPatricksDayDate.Subtract(DateTime.Today).TotalDays;
             double daysUntilEaster = easterDate.Subtract(DateTime.Today).TotalDays;
+            double daysUntilIndependence = independenceDate.Subtract(DateTime.Today).TotalDays;
             double daysUntilHalloween = halloweenDate.Subtract(DateTime.Today).TotalDays;
             double daysUntilArmistice = armisticeDate.Subtract(DateTime.Today).TotalDays;
             double daysUntilThanksgiving = thanksgivingDate.Subtract(DateTime.Today).TotalDays;
@@ -66,6 +68,11 @@ namespace WorldSpecialDaysCountdown
             if (daysUntilEaster <= 0)
             {
                 daysUntilEaster = 0;
+            }
+
+            if (daysUntilIndependence <= 0)
+            {
+                daysUntilIndependence = 0;
             }
 
             if (daysUntilHalloween <= 0)
@@ -92,6 +99,7 @@ namespace WorldSpecialDaysCountdown
             lblDaysLeftValentines.Text += daysUntilValentines.ToString();
             lblDaysLeftStPatricksDay.Text += daysUntilStPatricksDay.ToString();
             lblDaysLeftEaster.Text += daysUntilEaster.ToString();
+            lblDaysLeftIndependence.Text += daysUntilIndependence.ToString();
             lblDaysLeftHalloween.Text += daysUntilHalloween.ToString();
             lblDaysLeftArmisticeDay.Text += daysUntilArmistice.ToString();
             lblDaysLeftThanksgiving.Text += daysUntilThanksgiving.ToString();

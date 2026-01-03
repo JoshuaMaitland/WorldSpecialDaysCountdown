@@ -36,6 +36,7 @@
             this.lblDaysLeftArmisticeDay = new System.Windows.Forms.Label();
             this.lblDaysLeftEaster = new System.Windows.Forms.Label();
             this.lblDaysLeftThanksgiving = new System.Windows.Forms.Label();
+            this.lblDaysLeftIndependence = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblDaysLeftNewYear
@@ -65,7 +66,7 @@
             this.lblDaysLeftChristmas.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.lblDaysLeftChristmas.Font = new System.Drawing.Font("Calibri", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDaysLeftChristmas.ForeColor = System.Drawing.Color.White;
-            this.lblDaysLeftChristmas.Location = new System.Drawing.Point(12, 435);
+            this.lblDaysLeftChristmas.Location = new System.Drawing.Point(12, 495);
             this.lblDaysLeftChristmas.Name = "lblDaysLeftChristmas";
             this.lblDaysLeftChristmas.Size = new System.Drawing.Size(500, 61);
             this.lblDaysLeftChristmas.TabIndex = 2;
@@ -87,7 +88,7 @@
             // 
             this.lblDaysLeftHalloween.Font = new System.Drawing.Font("Calibri", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDaysLeftHalloween.ForeColor = System.Drawing.Color.White;
-            this.lblDaysLeftHalloween.Location = new System.Drawing.Point(12, 253);
+            this.lblDaysLeftHalloween.Location = new System.Drawing.Point(12, 313);
             this.lblDaysLeftHalloween.Name = "lblDaysLeftHalloween";
             this.lblDaysLeftHalloween.Size = new System.Drawing.Size(500, 61);
             this.lblDaysLeftHalloween.TabIndex = 6;
@@ -98,7 +99,7 @@
             // 
             this.lblDaysLeftArmisticeDay.Font = new System.Drawing.Font("Calibri", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDaysLeftArmisticeDay.ForeColor = System.Drawing.Color.White;
-            this.lblDaysLeftArmisticeDay.Location = new System.Drawing.Point(12, 314);
+            this.lblDaysLeftArmisticeDay.Location = new System.Drawing.Point(12, 374);
             this.lblDaysLeftArmisticeDay.Name = "lblDaysLeftArmisticeDay";
             this.lblDaysLeftArmisticeDay.Size = new System.Drawing.Size(500, 61);
             this.lblDaysLeftArmisticeDay.TabIndex = 7;
@@ -121,19 +122,31 @@
             this.lblDaysLeftThanksgiving.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.lblDaysLeftThanksgiving.Font = new System.Drawing.Font("Calibri", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDaysLeftThanksgiving.ForeColor = System.Drawing.Color.White;
-            this.lblDaysLeftThanksgiving.Location = new System.Drawing.Point(12, 375);
+            this.lblDaysLeftThanksgiving.Location = new System.Drawing.Point(12, 435);
             this.lblDaysLeftThanksgiving.Name = "lblDaysLeftThanksgiving";
             this.lblDaysLeftThanksgiving.Size = new System.Drawing.Size(500, 61);
             this.lblDaysLeftThanksgiving.TabIndex = 9;
             this.lblDaysLeftThanksgiving.Text = "Days left til Thanksgiving: ";
             this.lblDaysLeftThanksgiving.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // lblDaysLeftIndependence
+            // 
+            this.lblDaysLeftIndependence.Font = new System.Drawing.Font("Calibri", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDaysLeftIndependence.ForeColor = System.Drawing.Color.White;
+            this.lblDaysLeftIndependence.Location = new System.Drawing.Point(12, 252);
+            this.lblDaysLeftIndependence.Name = "lblDaysLeftIndependence";
+            this.lblDaysLeftIndependence.Size = new System.Drawing.Size(500, 61);
+            this.lblDaysLeftIndependence.TabIndex = 10;
+            this.lblDaysLeftIndependence.Text = "Days left til Independence: ";
+            this.lblDaysLeftIndependence.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(524, 501);
+            this.ClientSize = new System.Drawing.Size(524, 561);
+            this.Controls.Add(this.lblDaysLeftIndependence);
             this.Controls.Add(this.lblDaysLeftThanksgiving);
             this.Controls.Add(this.lblDaysLeftEaster);
             this.Controls.Add(this.lblDaysLeftArmisticeDay);
@@ -161,6 +174,7 @@
         private System.Windows.Forms.Label lblDaysLeftArmisticeDay;
         private System.Windows.Forms.Label lblDaysLeftEaster;
         private System.Windows.Forms.Label lblDaysLeftThanksgiving;
+        private System.Windows.Forms.Label lblDaysLeftIndependence;
     }
 }
 
