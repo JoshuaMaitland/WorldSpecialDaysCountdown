@@ -9,3 +9,9 @@ How many special days are left in the world
 
 - Internet Connection (needed for updates)
 - <a href="https://dotnet.microsoft.com/en-us/download/dotnet-framework/net462">.NET Framework 4.6.2</a>
+
+## FAQ
+
+Q: I've pressed "F1" on the keyboard, but the about message box didn't show up. How can I get the program to show the message box when I pressed the "F1" key?
+
+A: Some keyboards have got functions on the "F1-12" keys (especially when you're using the laptop), which is why you're not getting the about message box. To workaround this, press & hold the FN+F1 key and that should show the message box.
