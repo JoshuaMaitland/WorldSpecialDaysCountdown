@@ -3,7 +3,6 @@
 <br>
 How many special days are left in the world
 <br>
-<br>
 <img src="Screenshot.png" alt="World Special Days Countdown window"/>
 
 ## Requirements
