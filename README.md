@@ -1,5 +1,6 @@
 # World Special Days Countdown
 <img src="https://img.shields.io/github/downloads/JoshuaMaitland/WorldSpecialDaysCountdown/total?label=Downloads" alt="Downloads"/> <a href="https://github.com/JoshuaMaitland/WorldSpecialDaysCountdown/releases/latest"><img src="https://img.shields.io/github/v/release/JoshuaMaitland/WorldSpecialDaysCountdown?label=Release&color=brightgreen" alt="Release"/></a>
+<br>
 How many special days are left in the world
 <br>
 <br>
